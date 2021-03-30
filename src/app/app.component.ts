@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ListaEjercicios';
+  title = 'Aplicacion con Angular 10';
+  mensaje = 'bienvenidos a la pagina del Ingeniero giovanni velez Marin'
 }

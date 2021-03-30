@@ -1,0 +1,20 @@
+<!--<h2>esposos!:{{ejercicio.name}}</h2>
+<h2><span>Id: </span> {{ejercicio.id}}</h2>
+<div>
+  <label>Nombre:
+    <input [(ngModel)] = "ejercicio.name" >
+  </label>
+    <h2 style="color: green;"><span>nombre: </span> {{ejercicio.name}}</h2>
+</div>-->
+<h2>Listado de posibles mujeres de Giovanni</h2>
+  <ul class="ejercicios">
+    <li *ngFor="let ejerc of ejercicio" (click)="seleccionaEjercicio(ejerc)" [class.selected]="ejerc===ejercicioSeleccionado">
+      <span class="ejercicio">{{ejerc.id + " "}} </span>{{ejerc.name}}
+    </li>
+  </ul><br><br><br><br><br><br><br><br>
+
+  <app-ejercicio-detalle [ejerc]="ejercicioSeleccionado"></app-ejercicio-detalle>
+
+
+
+

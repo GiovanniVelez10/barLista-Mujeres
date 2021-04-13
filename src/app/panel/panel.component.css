@@ -1,0 +1,14 @@
+.cabecera .modulos{
+background-color:rebeccapurple;
+width: 170px;
+height: 80px;
+text-align: center;
+margin: 12px;
+position: relative;
+float: left;
+}
+.cabecera .modulos:hover {
+  color: #607D88;
+  background-color: #DDD;
+  left: .1em;
+}

@@ -13,9 +13,13 @@ export class PanelComponent implements OnInit {
 
   ejercicio:Ejercicio[];
 
-  constructor(private ejercicioservice:EjercicioService) { }
+  constructor(private ejercicioservice:EjercicioService) {
+    console.log("-----------Componente Panel creado-----");
+  }
 
   ngOnInit(): void {
+    console.log("-----------Componente Panel[(ngOnInit)]-----");
+    this.getEjercicios();
   }
 
   getEjercicios():void{

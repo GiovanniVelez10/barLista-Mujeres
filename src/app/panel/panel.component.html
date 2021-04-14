@@ -1,9 +1,11 @@
 <h3>Mujeres que amo el Ingeniero</h3>
 <div class="cabecera">
-  <a *ngFor="let mujer of ejercicio" class="col-1-4">
+  <a *ngFor="let mujer of ejercicio" class="col-1-4" routerLink="/detalle/{{mujer.id}}">
     <div class="modulos">
       <h4>{{mujer.name}}</h4>
     </div>
   </a>
 
 </div>
+
+

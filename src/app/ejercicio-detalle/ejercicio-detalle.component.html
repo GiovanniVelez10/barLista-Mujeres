@@ -1,4 +1,19 @@
 <div *ngIf="ejerc">
+  <h2>Details: {{ ejerc.name | uppercase}}</h2>
+  <div><span>id: </span>{{ejerc.id}}</div>
+  <div>
+    <label>Nombre:
+      <input [(ngModel)]="ejerc.name" placeholder="nombre">
+    </label>
+  </div><br><br>
+  <button (click)="goback()" style="background-color:cornsilk; color: black;">VOLVER</button>
+</div>
+
+
+
+<!---
+<div *ngIf="ejerc">
   <h2>Detalle</h2>
   <div><span>id: </span>{{ejerc.name}}</div>
-</div>
+</div><br>
+<button (click)="goback()" style="background-color:cornsilk; color: black;">VOLVER</button>-->

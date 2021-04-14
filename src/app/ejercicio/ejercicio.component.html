@@ -8,12 +8,14 @@
 </div>-->
 <h2>Listado de posibles mujeres de Giovanni</h2>
   <ul class="ejercicios">
-    <li *ngFor="let ejerc of ejercicio" (click)="seleccionaEjercicio(ejerc)" [class.selected]="ejerc===ejercicioSeleccionado">
-      <span class="ejercicio">{{ejerc.id + " "}} </span>{{ejerc.name}}
+    <li *ngFor="let ejerc of ejercicio" (click)="seleccionaEjercicio(ejerc)" [class.selected]="ejerc===ejercicioSeleccionado" routerLink="/detalle/{{ejerc.id}}">
+
+      <span class="ejercicio">{{ejerc.id}} </span>{{ejerc.name}}
+
     </li>
   </ul><br><br><br><br><br><br><br><br>
 
-  <app-ejercicio-detalle [ejerc]="ejercicioSeleccionado"></app-ejercicio-detalle>
+
 
 
 

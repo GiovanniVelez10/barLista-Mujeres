@@ -13,6 +13,7 @@ export class PanelComponent implements OnInit {
 
   ejercicio:Ejercicio[];
 
+
   constructor(private ejercicioservice:EjercicioService) {
     console.log("-----------Componente Panel creado-----");
   }
@@ -25,5 +26,8 @@ export class PanelComponent implements OnInit {
   getEjercicios():void{
     this.ejercicioservice.getEjercicios().subscribe(ejercicio=>this.ejercicio=ejercicio);
   }
+
+
+
 
 }

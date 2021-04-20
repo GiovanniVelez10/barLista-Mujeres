@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "lista-mujeres-angular": {
+      "hosting": {
+        "ListaEjercicios": [
+          "lista-mujeres-angular"
+        ]
+      }
+    }
+  }
+}

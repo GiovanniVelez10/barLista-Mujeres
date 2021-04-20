@@ -12,6 +12,12 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
+import {AngularFireModule} from '@angular/fire';
+import {AngularFireAnalyticsModule} from '@angular/fire/analytics';
+import {AngularFirestoreModule} from '@angular/fire/firestore';
+import {environment} from '../environments/environment';
+import { TestbdComponent } from './testbd/testbd.component';
+
 
 
 @NgModule({
@@ -19,7 +25,9 @@ import {MatListModule} from '@angular/material/list';
     AppComponent,
     EjercicioComponent,
     EjercicioDetalleComponent,
-    PanelComponent
+    PanelComponent,
+    TestbdComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -29,7 +37,10 @@ import {MatListModule} from '@angular/material/list';
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAnalyticsModule,
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

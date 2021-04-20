@@ -25,6 +25,7 @@ export class EjercicioDetalleComponent implements OnInit {
   getEjercicio():void{
     const id=+this.route.snapshot.paramMap.get('id');
     this.ejercicioService.getEjercicio(id).subscribe(ejercicio=>this.ejerc=ejercicio)//ejerc o ejercicio probar
+    //debugger;
   }
 
   goback():void{

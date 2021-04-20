@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Aplicacion con Angular 10';
-  mensaje = 'bienvenidos a la pagina del Ingeniero giovanni velez Marin'
+  mensaje = 'bienvenidos a la pagina del Ingeniero Giovanni Velez Marin'
 }

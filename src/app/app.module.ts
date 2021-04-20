@@ -7,6 +7,11 @@ import { AppComponent } from './app.component';
 import { EjercicioComponent } from './ejercicio/ejercicio.component';
 import { EjercicioDetalleComponent } from './ejercicio-detalle/ejercicio-detalle.component';
 import { PanelComponent } from './panel/panel.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
 
 
 @NgModule({
@@ -19,7 +24,12 @@ import { PanelComponent } from './panel/panel.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
